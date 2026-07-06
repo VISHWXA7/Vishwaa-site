@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 import { useState, useEffect } from 'react';
 import { theme } from '../styles/theme';
+import logo from '../assets/icon/Navlogo.png';
 
 const Navbar = () => {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -30,8 +31,8 @@ const Navbar = () => {
           {/* Added Logo/Icon */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="https://raw.githubusercontent.com/phillip-che/phillipche-site/refs/heads/main/src/assets/icon/transparent.png" 
-              alt="Phillip Che" 
+              src={logo} 
+              alt="Vishwaa" 
               className="w-8 h-8"
             />
           </Link>
@@ -61,7 +62,7 @@ const Navbar = () => {
           </div>
           <motion.button
               onClick={toggleTheme}
-              className="hidden sm:block p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors rounded-lg"
+              className="p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors rounded-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
