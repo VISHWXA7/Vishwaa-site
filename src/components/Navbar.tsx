@@ -27,7 +27,7 @@ const Navbar = () => {
       className="w-full backdrop-blur-sm"
     >
       <nav className="container-width py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between w-full px-2 sm:px-0">
           {/* Added Logo/Icon */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
