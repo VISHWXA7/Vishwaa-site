@@ -23,15 +23,7 @@ const Gear = () => {
         {gearCategories.map((category, index) => (
           <FadeInSection key={category.category} delay={index * 0.2}>
             <div className="flex flex-wrap items-baseline justify-between gap-2 mb-2">
-              <h2 className="text-lg font-medium">{category.category}</h2>
-              <a
-                href={category.listUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
-              >
-                View full list →
-              </a>
+              <h2 className="text-lg font-medium mt-2">{category.category}</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {category.items.map((item, itemIndex) => (
