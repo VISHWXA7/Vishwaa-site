@@ -50,33 +50,33 @@ export const sections = [
         <div className="space-y-4 mb-8">
           {[
             {
-              company: "Amazon",
-              date: "2024 - Now",
+              company: "Manipal University, Jaipur",
+              date: "2026 - Now",
+              title: "Master of Computer Application",
+              description: ["Learning for my Masters"],
+              dotColor: "bg-orange-500"
+            },
+            {
+              company: "iAutomatia",
+              date: "2025 - Now",
               title: "Software Development Engineer",
-              description: ["working on large scale messaging systems"],
+              description: ["working on large scale industrial application development"],
+              dotColor: "bg-emerald-500"
+            },
+            {
+              company: "TWT Organization",
+              date: "2025",
+              title: "Web Development Intern",
+              description: ["Built a Modern website for the organization"],
               dotColor: "bg-blue-500"
             },
             {
-              company: "California State Polytechnic University, Pomona",
-              date: "2020 - 2024",
-              title: "B.S. Computer Science",
+              company: "The American College, Madurai",
+              date: "2022 - 2025",
+              title: "B.Sc. Computer Science",
               description: ["got my degree to make my parents proud"],
               dotColor: "bg-amber-300"
             },
-            {
-              company: "Amazon",
-              date: "2023 - 2023",
-              title: "Software Development Engineer Intern",
-              description: ["worked on amazon fresh grocery experience"],
-              dotColor: "bg-green-500"
-            },
-            {
-              company: "Solace Notify",
-              date: "2019 - 2023",
-              title: "Founder",
-              description: ["built reselling community and developed tools"],
-              dotColor: "bg-red-500"
-            }
           ].map((item) => (
             <div key={item.company + item.date} className="relative">
               <div 
