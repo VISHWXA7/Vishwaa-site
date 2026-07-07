@@ -6,6 +6,12 @@ import portfolioPreview from '../assets/images/1.jpg';
 
 const Home = () => {
   usePageTitle('');  // Empty string for home page
+  const techTags = [
+    { name: 'React', className: 'bg-cyan-500' },
+    { name: 'TypeScript', className: 'bg-yellow-500' },
+    { name: 'Tailwind', className: 'bg-green-500' },
+    { name: 'Vercel', className: 'bg-orange-500' },
+  ];
 
   return (
     <div>
@@ -69,12 +75,12 @@ const Home = () => {
               </p>
 
               <div className="flex flex-wrap gap-2 pt-1">
-                {['React', 'TypeScript', 'Tailwind', 'Vercel'].map((tech) => (
+                {techTags.map((tech) => (
                   <span
-                    key={tech}
-                    className="rounded-full bg-gray-100 px-2.5 py-1 text-xs text-gray-700 dark:bg-[#222222] dark:text-gray-300"
+                    key={tech.name}
+                    className={`rounded-full px-2 py-1 text-xs text-white ${tech.className}`}
                   >
-                    {tech}
+                    {tech.name}
                   </span>
                 ))}
               </div>
