@@ -29,11 +29,11 @@ const Navbar = () => {
       <nav className="container-width py-4">
         <div className="flex items-center justify-between w-full px-2 sm:px-0">
           {/* Added Logo/Icon */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex shrink-0 items-center space-x-2">
             <img 
               src={logo} 
               alt="Vishwaa" 
-              className="w-8 h-8"
+              className="h-9 w-auto shrink-0 object-contain sm:h-10"
             />
           </Link>
 
