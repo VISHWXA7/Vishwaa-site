@@ -27,7 +27,7 @@ const Navbar = () => {
       className="w-full backdrop-blur-sm"
     >
       <nav className="container-width py-4">
-        <div className="flex items-center justify-between w-full px-2 sm:px-0">
+        <div className="flex w-full items-center justify-center gap-3 sm:gap-6">
           {/* Added Logo/Icon */}
           <Link to="/" className="flex shrink-0 items-center space-x-2">
             <img 
@@ -37,12 +37,12 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className="flex items-center space-x-1">
+          <div className="flex items-center gap-1">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-3 py-2 text-sm rounded-lg transition-colors relative ${
+                className={`px-2 py-2 text-sm rounded-lg transition-colors relative sm:px-3 ${
                   activeTab === item.path
                     ? 'text-gray-900 dark:text-white'
                     : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
