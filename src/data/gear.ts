@@ -1,19 +1,3 @@
-/**
- * Gear page data — mirrors your Amazon storefront lists.
- *
- * SYNCING WITH AMAZON:
- * Amazon does not provide a public API for influencer storefront / idea lists,
- * so this file is the source of truth. When you add or remove items (or a
- * collection) on your Amazon storefront, update this file to match.
- *
- * List URLs (for reference):
- * - Desk Setup:  https://www.amazon.com/shop/phillipche/list/2EL6EOCFIKQ6O
- * - Recording:   https://www.amazon.com/shop/phillipche/list/1Z7YDJROMUT40
- * - PC Gear:     https://www.amazon.com/shop/phillipche/list/2IJ800MZ94A7W
- *
- * To add an item: push a new entry with name, link, and image URL.
- */
-
 export interface GearEntry {
   name: string;
   link: string;
@@ -22,76 +6,82 @@ export interface GearEntry {
 
 export interface GearCategory {
   category: string;
-  listUrl: string;
   items: GearEntry[];
 }
 
 export const gearCategories: GearCategory[] = [
   {
-    category: "Desk Setup",
-    listUrl: "https://www.amazon.com/shop/phillipche/list/2EL6EOCFIKQ6O",
+    category: "Main Gear",
     items: [
       {
-        name: "LOFREE Flow Lite 84 Keys",
-        link: "https://www.lofree.co/products/flow-lite84-mechanical-keyboard?ref=phillipche",
-        image: "https://m.media-amazon.com/images/I/61z5Q8bkrkL._AC_SL1500_.jpg",
+        name: "S21 Fe 5G",
+        link: "https://www.samsung.com/in/support/model/SM-G990ELVIINU/",
+        image: "https://media-ik.croma.com/Croma%20Assets/Communication/Mobiles/Images/247558_0_rt4red.png",
       },
       {
-        name: "LOFREE Flow2 Low-Profile Mechanical Keyboard",
-        link: "https://www.lofree.co/products/flow-2-84-low-profile-mechanical-keyboard?ref=phillipche&variant=47210573037787",
-        image: "https://m.media-amazon.com/images/I/61YNZRCJnuL._AC_SL1500_.jpg",
+        name: "Galaxy Watch 7",
+        link: "https://www.amazon.in/Samsung-44mm-Green-BT-LTE/dp/B0DKFT7RCN",
+        image: "https://m.media-amazon.com/images/I/71QUv8DcRBL._SL1500_.jpg",
       },
       {
-        name: "EPOMAKER x Aula F65 65% Wireless",
-        link: "https://amzn.to/4rJrGdi",
-        image: "https://m.media-amazon.com/images/I/613gc0JYwpL._AC_SL1500_.jpg",
+        name: "Galaxy Buds 3 Pro",
+        link: "https://www.amazon.in/Samsung-Adaptive-Real-Time-Interpreter-Battery/dp/B0D7M4G3NP/",
+        image: "https://m.media-amazon.com/images/I/71ke2BEdIhL._SL1500_.jpg",
       },
       {
-        name: "Razer Viper V3 Pro Wireless Gaming Mouse",
-        link: "https://amzn.to/4bgYdBu",
-        image: "https://m.media-amazon.com/images/I/619xpFKAXPL._AC_SL1500_.jpg",
-      },
-    ],
-  },
-  {
-    category: "Recording Gear",
-    listUrl: "https://www.amazon.com/shop/phillipche/list/1Z7YDJROMUT40",
-    items: [
-      {
-        name: "DJI Osmo Pocket 3",
-        link: "https://amzn.to/3ODz2QU",
-        image: "https://m.media-amazon.com/images/I/61tukvVUMiL._AC_SL1500_.jpg",
-      },
-      {
-        name: "ULANZI PM01 Magnetic Mount Stand",
-        link: "https://amzn.to/4cl6dm4",
-        image: "https://m.media-amazon.com/images/I/61OzCjisLHL._AC_SL1500_.jpg",
+        name: "Sony WH-CH720N",
+        link: "https://www.amazon.in/Sony-Cancellation-Headphones-Multi-Point-Connection/dp/B0BS1QCFHX/",
+        image: "https://m.media-amazon.com/images/I/51rpbVmi9XL._SL1200_.jpg",
       },
     ],
   },
   {
     category: "PC Gear",
-    listUrl: "https://www.amazon.com/shop/phillipche/list/2IJ800MZ94A7W",
     items: [
       {
-        name: "Apple 2024 MacBook Pro M4 Pro 16-inch",
-        link: "https://amzn.to/47eXoqk",
-        image: "https://m.media-amazon.com/images/I/61hw7aZWYSL._AC_SL1500_.jpg",
+        name: "Lenovo Legion Slim 7i",
+        link: "https://www.amazon.in/Lenovo-Legion-Gaming-Laptop-Model/dp/B0CGHS2TXT",
+        image: "https://m.media-amazon.com/images/I/61P1thL0tJL._SL1154_.jpg",
       },
       {
-        name: "AMD Ryzen 7 7800X3D",
-        link: "https://amzn.to/3BvamUk",
-        image: "https://m.media-amazon.com/images/I/51HqC0rU9HL._AC_SL1500_.jpg",
+        name: "Intel® Core™ i9-13900H",
+        link: "https://www.amazon.in/Intel%C2%AE-CoreTM-i9-13900KS-Processor-Cache/dp/B0BVKX19C3/",
+        image: "https://m.media-amazon.com/images/I/41ifOU-bLfL._SL1080_.jpg",
       },
       {
-        name: "ASUS Dual GeForce RTX 4070 White OC",
-        link: "https://amzn.to/4kYPMxT",
-        image: "https://m.media-amazon.com/images/I/81aLFs6DwgL._AC_SX466_.jpg",
+        name: "NVIDIA GeForce RTX 4060",
+        link: "https://www.amazon.in/GIGABYTE-NVIDIA-GeForce-WINDFORCE-Graphics/dp/B0C8ZQTRD7/",
+        image: "https://m.media-amazon.com/images/I/71qcNRB-FeL._SL1500_.jpg",
       },
       {
-        name: "WD_BLACK SN850X 2TB NVMe SSD",
-        link: "https://amzn.to/4qYYZrD",
-        image: "https://m.media-amazon.com/images/I/61jQCrK6mFL._AC_SL1500_.jpg",
+        name: "Samsung 870 QVO 2TB",
+        link: "https://www.amazon.in/Samsung-Internes-Solid-State-MZ-77Q2T0BW/",
+        image: "https://m.media-amazon.com/images/I/91PA5sP5wNL._SL1500_.jpg",
+      },
+    ],
+  },
+  {
+    category: "Desk Setup",
+    items: [
+      {
+        name: "Samsung 22-inch Monitor",
+        link: "https://www.amazon.in/Samsung-Essential-Monitor-Resolution-LS22D300GAWXXL/dp/B0CG675TD4/",
+        image: "https://m.media-amazon.com/images/I/717t70C09VL._SL1500_.jpg",
+      },
+      {
+        name: "Height Adjustable Monitor Stand",
+        link: "https://www.amazon.in/dp/B09KPVNWD4",
+        image: "https://m.media-amazon.com/images/I/61sYE75F3QL._SL1254_.jpg",
+      },
+      {
+        name: "MageGee Portable 60% Mechanical Gaming Keyboard",
+        link: "https://www.amazon.in/dp/B092CHWH1D",
+        image: "https://m.media-amazon.com/images/I/71VIc-MHaNL._SL1500_.jpg",
+      },
+      {
+        name: "Portronics Toad Mouse",
+        link: "https://www.amazon.in/Portronics-Wireless-Bluetooth-Connectivity-Rechargeable/dp/B0BG8LZNYL/",
+        image: "https://m.media-amazon.com/images/I/51hZtBRUFBL._SL1500_.jpg",
       },
     ],
   },
