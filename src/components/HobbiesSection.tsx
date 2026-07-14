@@ -3,27 +3,27 @@ import { motion } from 'framer-motion';
 
 const hobbies = [
   {
-    title: "YouTube",
-    description: "documenting my life as a software engineer",
-    stats: "100+ videos",
-    color: "rose"
-  },
-  {
-    title: "Real Estate Investing",
-    description: "playing monopoly but with real money",
-    stats: "0 properties",
-    color: "blue"
-  },
-  {
-    title: "Stocks and Crypto",
-    description: "buying high and selling low is my philosophy",
-    stats: "-$25,000 profit",
+    title: "Investing",
+    description: "analyzing market trends and building long-term wealth",
+    stats: "long-term believer",
     color: "green"
   },
   {
-    title: "Mechanical Keyboards",
-    description: "fun but will be the reason why im homeless",
-    stats: "3 custom keyboards",
+    title: "Driving",
+    description: "exploring and clearing my mind behind the wheel",
+    stats: "0 fines (so far)",
+    color: "blue"
+  },
+  {
+    title: "Hearing Music",
+    description: "enjoys the perfect soundtrack for coding sessions",
+    stats: "24/7 lo-fi beats",
+    color: "rose"
+  },
+  {
+    title: "Gaming",
+    description: "clutching into stories and diving into immersive open worlds",
+    stats: "100+ hours logged",
     color: "purple"
   },
 ];
