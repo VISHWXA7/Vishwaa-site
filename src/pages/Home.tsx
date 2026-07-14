@@ -3,6 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { usePageTitle } from '../hooks/usePageTitle';
 import { FadeInSection } from '../utils/FadeInSection';
 import RecentProject from '../assets/images/RecentProject.png';
+import PictureOfTheMonth from '../assets/images/POM image.jpg';
 
 const Home = () => {
   usePageTitle('');  // Empty string for home page
@@ -45,8 +46,26 @@ const Home = () => {
         </section>
       </FadeInSection>
       
-      {/* Recent Project Section */}
+      {/* Picture of the Month Section */}
       <FadeInSection delay={0.2}>
+        <motion.section className="mt-10 space-y-3">
+          <div className="flex items-center justify-between gap-3">
+            <h2 className="text-lg font-semibold">Picture of the Month</h2>
+            <span className="text-sm text-gray-600 dark:text-gray-400">July 2026</span>
+          </div>
+
+          <div className="overflow-hidden rounded-lg bg-gray-100 shadow-sm dark:bg-[#222222]">
+            <img
+              src={PictureOfTheMonth}
+              alt="Picture of the month"
+              className="aspect-[3/2] w-full object-cover"
+            />
+          </div>
+        </motion.section>
+      </FadeInSection>
+
+      {/* Recent Project Section */}
+      <FadeInSection delay={0.4}>
         <motion.section className="mt-10 space-y-3">
           <div className="flex items-center justify-between gap-3">
             <h2 className="text-lg font-semibold">Recent Project</h2>
