@@ -72,7 +72,6 @@ const Home = () => {
               <h3 className="font-medium text-gray-900 dark:text-white">Industrial UI Framework</h3>
               <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
                 Designed a multi-module frontend interface system for an automated factory processing platform (EFEM).
-                Leveraged Claude to handle tricky layout cleaning and speed up the production build.
               </p>
 
               <div className="flex flex-wrap gap-2 pt-1">
