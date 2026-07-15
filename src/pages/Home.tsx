@@ -41,12 +41,12 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           >
-            your average tech enthusiast from Cape documenting the path to becoming a software engineer.
+            your average tech enthusiast from Cape actively seeking opportunities and ready to build and deliver value together.
           </motion.p>
         </section>
       </FadeInSection>
       
-      {/* Picture of the Month Section */}
+      {/* Top shot Section */}
       <FadeInSection delay={0.2}>
         <motion.section className="mt-10 space-y-3">
           <div className="flex items-center justify-between gap-3">
