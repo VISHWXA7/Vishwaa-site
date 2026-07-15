@@ -80,7 +80,7 @@ export const sections = [
           ].map((item) => (
             <div key={item.company + item.date} className="relative">
               <div 
-                className={`absolute -left-[17px] top-2 w-[9px] h-[9px] rounded-full ${item.dotColor} ring-4 ring-white dark:ring-gray-900`}
+                className={`absolute -left-[12px] top-2 h-[9px] w-[9px] rounded-full ${item.dotColor} ring-4 ring-white dark:ring-gray-900`}
               />
               <motion.div
                 className="group py-1 transition-colors"
