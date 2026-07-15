@@ -41,7 +41,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           >
-            your average tech enthusiast from Cape actively seeking opportunities and ready to build and deliver value together.
+            your average tech enthusiast from Cape actively seeking opportunities and ready to build, deliver value together.
           </motion.p>
         </section>
       </FadeInSection>
