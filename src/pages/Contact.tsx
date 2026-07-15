@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { usePageTitle } from '../hooks/usePageTitle';
 import { FadeInSection } from '../utils/FadeInSection';
+import resumeUrl from '../assets/documents/Vishwaa_resume_v6.pdf';
+import resumePreview from '../assets/images/Resumeimage.jpg';
 
 const Contact = () => {
   usePageTitle('Contact');
@@ -143,6 +145,39 @@ const Contact = () => {
             </motion.a>
           </div>
         </div>
+      </FadeInSection>
+      <FadeInSection delay={0.3}>
+        <motion.section className="mt-10 space-y-3">
+          <div className="flex items-center justify-between gap-3">
+            <h2 className="text-lg font-semibold">My Resume</h2>
+            <span className="text-sm text-gray-600 dark:text-gray-400">PDF</span>
+          </div>
+
+          <motion.div
+            role="link"
+            tabIndex={0}
+            onClick={() => window.open(resumeUrl, '_blank', 'noopener,noreferrer')}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                window.open(resumeUrl, '_blank', 'noopener,noreferrer');
+              }
+            }}
+            className="group relative w-full cursor-pointer overflow-hidden rounded-xl border border-gray-200 bg-gray-100 text-left focus:outline-none dark:border-gray-700 dark:bg-[#222222]"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.99 }}
+          >
+            <img
+              src={resumePreview}
+              alt="Preview of Vishwaa's resume"
+              className="aspect-[4/2] w-full object-cover"
+            />
+            <div className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-black/55 px-4 py-3 text-white opacity-100 transition-opacity sm:opacity-0 sm:group-hover:opacity-100">
+              <span className="text-sm font-medium">View resume</span>
+              <span className="text-sm">Click to open →</span>
+            </div>
+          </motion.div>
+        </motion.section>
       </FadeInSection>
     </div>
   );
